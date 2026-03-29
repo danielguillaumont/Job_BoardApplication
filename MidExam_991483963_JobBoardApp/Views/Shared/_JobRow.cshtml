@@ -1,0 +1,17 @@
+﻿@model MidExam_991483963_JobBoardApp.Models.JobPosting
+
+<tr>
+    <td>@Model.JobTitle</td>
+    <td>@Model.Department</td>
+    <td>@Model.ClosingDate.ToString("MMM dd, yyyy")</td>
+    <td>
+        @if (Model.IsOpen)
+        {
+            <a asp-action="ApplyForm" asp-route-id="@Model.Id">Apply Now</a>
+        }
+        else
+        {
+            <strong>Position Closed</strong>
+        }
+    </td>
+</tr>
