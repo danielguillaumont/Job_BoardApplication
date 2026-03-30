@@ -57,6 +57,7 @@ Job_BoardApplication/
 │       └── _JobRow.cshtml
 ├── Program.cs
 └── README.md
+```
 ## How the Application Works
 
 When the application loads, users are presented with a list of available job postings. Each posting includes the job title, department, closing date, and an action column. If the current date is before the closing date, users can click **Apply Now**. If the deadline has passed, the application displays **Position Closed** instead.
